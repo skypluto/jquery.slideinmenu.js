@@ -1,0 +1,275 @@
+/* -------------------------------------------------------------
+  Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+  By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+
+  List of CSS3 Sass Mixins File to be @imported and @included as you need
+
+  The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
+  ENDING css files
+
+  note: All CSS3 Properties are being supported by Safari 5
+  more info: http://www.findmebyip.com/litmus/#css3-properties
+
+------------------------------------------------------------- */
+
+/*MIXINS*/
+
+/* Common Functions */
+
+/* Clear Fix */
+
+/* Heading */
+
+/* Font-Face Mixin */
+
+/* Desktop Wide Screens - > 1920 */
+
+/* Desktop Wide Screens - > 1920 */
+
+/* Desktop Wide Screens - 1366 to 1919 */
+
+/* Desktop Wide Screens - 1366 to 1919 */
+
+/* Desktop Screens - 1200 to 1365 */
+
+/* Desktop Screens - 1200 to 1365 */
+
+/* Desktop Screens - 1024 to 1199 */
+@media only screen and (max-width: 1199px) {
+  .navbar .container {
+    width: 100%;
+  }
+}
+/* Desktop Screens - 1024 to 1199 */
+
+/* Tablet Wide - 768 to 1023 */
+@media only screen and (max-width: 1023px) {
+  .footer-container .top-footer-row, .footer-container .bottom-footer-row {
+    flex-direction: column-reverse;
+    padding: 10px 0;
+  }
+  .footer-container .bottom-footer-row .container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-container .bottom-footer-row .container .copyright {
+    text-align: center;
+  }
+  .footer-container .container {
+    padding: 0;
+  }
+  .footer-container .container .logo, .footer-container .container .footer-contact {
+    width: 100%;
+    position: relative;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    float: none !important;
+  }
+}
+
+/* Tablet Wide - 768 to 1023 */
+
+/* Tablet - 640 to 767 */
+
+@media only screen and (max-width: 767px) {
+  .show-mobile {
+    display: block;
+  }
+  .hide-mobile {
+    display: none;
+  }
+  .responsive-img {
+    width: 100%;
+    height: 100%;
+  }
+  .navbar-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar-header .navbar-toggle {
+    left: 0;
+    position: absolute;
+    margin-right: 0;
+  }
+  .navbar-header .navbar-toggle .icon-bar {
+    background-color: #000;
+  }
+  .navbar-header #mobile-search-button.navbar-toggle {
+    left: auto;
+    right: 0;
+  }
+  .navbar-header .navbar-brand {
+    height: auto;
+    padding: 0;
+  }
+  .navbar #navbar {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: #CCC;
+    width: 100%;
+    min-height: 600px;
+    height: 100%;
+    overflow-y: scroll;
+    max-height: unset;
+    margin-top: 80px;
+    padding-bottom: 200px;
+    z-index: 9999;
+  }
+  .navbar #navbar .icons-wrapper.hide-mobile {
+    display: none;
+  }
+  .navbar #navbar .centerNav {
+    float: none !important;
+    z-index: 9999;
+  }
+  .navbar #navbar .centerNav ul li a {
+    min-height: 35px;
+    width: 100%;
+    justify-content: left;
+  }
+  .navbar #navbar .centerNav ul li>ul>li>a {
+    margin-left: 20px;
+  }
+  .navbar #navbar .centerNav ul li.show-mobile {
+    display: inline-flex;
+    width: 100%;
+  }
+  .navbar #navbar .centerNav ul li.show-mobile .share-panel .share-body {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    margin-left: 20px;
+    padding: 10px 0;
+  }
+  .navbar #navbar .centerNav ul li.show-mobile .share-panel .share-body .text-col {
+    padding-bottom: 10px;
+    font-weight: 700;
+  }
+  .navbar #navbar .centerNav ul li.show-mobile .share-panel .share-body .a2a_kit {
+    display: inline-flex;
+  }
+  .navbar #navbar .centerNav ul li.show-mobile .share-panel .share-body .a2a_kit a {
+    padding-left: 0;
+  }
+  .navbar #navbar .centerNav .search-panel.show-mobile {
+    padding-top: 20px;
+  }
+  .navbar #navbar .centerNav .search-panel.show-mobile input[type="text"] {
+    height: 50px;
+    padding: 15px;
+    border-width: 1px;
+    border-style: solid;
+  }
+  .navbar #navbar .centerNav .search-panel.show-mobile button {
+    border: 0;
+  }
+  .bx-wrapper .bx-controls-direction a {
+    z-index: 999;
+  }
+  .dropdown-menu {
+    position: static;
+    display: block;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  .hero-wrapper.inner-page .caption-container .caption .headline {
+    background-color: #1a2b71;
+    position: relative;
+    bottom: unset;
+  }
+  .hero-wrapper .caption-container .caption {
+    padding: 0;
+    max-width: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: auto;
+  }
+  .hero-wrapper .caption-container .caption .headline {
+    padding: 30px 20px 0 20px;
+    font-size: 32px;
+  }
+  .hero-wrapper .caption-container .caption .quote-wrapper {
+    padding: 20px 20px;
+    height: auto;
+  }
+  .hero-wrapper .caption-container .caption .quote-wrapper .button.button-align-left {
+    margin: auto;
+  }
+  .flex-horizontal-box {
+    flex-direction: column;
+  }
+  .flex-horizontal-box .text-col {
+    padding: 15px 0;
+  }
+}
+
+/* Tablet - 640 to 767 */
+
+/* Tablet Samll - 560 to 639 */
+
+/* Tablet Samll - 560 to 639 */
+
+/* Phablet - 480 to 559 */
+
+@media only screen and (max-width: 559px) {}
+
+/* Phablet - 480 to 559 */
+
+/* Phone Wide - 400 to 479 */
+
+@media only screen and (max-width: 479px) {}
+
+/* Phone Wide - 400 to 479 */
+
+/* Phone - 350 to 399 */
+
+@media only screen and (max-width: 399px) {
+  .footer-container .container {
+    width: 100%;
+  }
+  .footer-container .container .footerContact {
+    display: flex;
+    justify-content: left;
+  }
+  .footer-container .container .link-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-container .container .link-list li {
+    text-align: left;
+    padding: 0.5em;
+    border-left: 0;
+    text-align: center;
+  }
+  .link-list li {
+    padding: 0 0.5em;
+  }
+  .navbar-header {
+    padding: 0 50px;
+  }
+}
+
+/* Phone - 350 to 399 */
+
+/* Phone Small - 320 */
+
+@media only screen and (max-width: 349px) {
+}
+
+/* Phone Small - 320 */
